@@ -1,6 +1,4 @@
-import "./AboutMe.css"
-import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn } from "react-icons/fa";
-
+import "./aboutme.css"
 const AboutMe = () => {
   return (
     <div className="about">

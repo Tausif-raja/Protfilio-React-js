@@ -1,5 +1,5 @@
   import { NavLink } from 'react-router-dom'
-  import "./MyLinks.css"
+  import "./mylinks.css"
   import { useState } from "react";
   
 

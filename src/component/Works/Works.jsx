@@ -1,6 +1,6 @@
 import { NavLink } from 'react-router-dom'
 import mywork_data from '../../assets/mywork_data'
-import "./Works.css"
+import "./works.css"
 
 const Works = () => {
   return (
