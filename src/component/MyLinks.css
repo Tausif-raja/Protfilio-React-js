@@ -1,0 +1,119 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    background-color: antiquewhite;
+    font-family: "Roboto", sans-serif;
+}
+
+
+.navbar {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 20px;   
+  text-transform: uppercase;
+  position: relative;
+    
+}
+.logo{
+    align-self: flex-start;
+    width: 100px;
+    height: 100px;
+    border-radius: 200px;
+    margin-top: 10px;
+
+}
+
+a{
+  text-decoration:none ;
+  color: black;
+}
+
+
+
+
+.links{
+    flex: 1/2;
+    display: flex;
+    justify-content: space-between;
+    gap:80px;
+    margin-top: 49px;
+    list-style: none;
+    font-size: 20px;
+}
+
+.hamburger-img {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  z-index: 999;
+  margin-top:25px ;
+}
+
+
+.close-img {
+  display: block;
+  top: 20px;
+  right: 20px;
+  width: 30px;
+  height: 30px;
+  z-index: 999;     
+  cursor: pointer;
+}
+
+
+/* ---------- MENU ICONS ---------- */
+.menu-toggle img {
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+  position: absolute;              
+  top: 20px;
+  right: 20px;
+  z-index: 1001;
+}
+
+
+.menu-toggle {
+  display: none;
+}
+
+
+
+/* ----------  MOBILE  ---------- */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .links {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    flex-direction: column;
+    align-items: flex-start;     
+    justify-content: flex-start; 
+    padding: 70px 30px 0 30px;   
+    width: 250px;
+    height: 100%;
+    background-color: antiquewhite;     
+    gap: 20px;
+    transition: right 0.4s ease;
+  }
+  .links.open {
+    right: 0;
+  }
+  .logo {
+  margin-left: -70px;   
+  }
+  
+}
+
+
